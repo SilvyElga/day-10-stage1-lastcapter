@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/style.css" />
+    <script src="https://kit.fontawesome.com/cf540236df.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./asset2/erson-outline-icon-png-person-icon-png-white-11562864385wyirbbsupu.png" />
+    <title>home</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="../public/asset2/logo.png" alt="logo" />
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/blog">My Project</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          {{#if isLogin}}
+          <span>{{user.name}}</span>
+          <li><a href="/logout">Logout</a></li>
+          {{else}}
+          <li><a href="/registrasi">Register</a></li>
+          <li><a href="/login">Login</a></li>
+          {{/if}}
+          
+        </ul>
+        <span class="contact-me"><a href="/form">Contact Me</a></span>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <div class="container-content">
+        <div class="left-side">
+          <h1>Hi Welcome to my hut</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed unde incidunt inventore exercitationem similique culpa vero nam fuga laborum itaque commodi provident aspernatur dolorum nesciunt enim quod, neque, voluptates quia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, error magni? Ea blanditiis similique unde quibusdam ab quod reprehenderit reiciendis magni iure quam, incidunt optio nisi deserunt, earum beatae sed?
+          </p>
+          <div class="download">
+            <a href="#">contact</a>
+            <p>download CV <i class="fa-solid fa-download"></i></p>
+          </div>
+          <br><br><br>
+          <div class="icon">
+            <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin-in" ></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f" style="padding:5px 5px"></i></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa-brands fa-twitter"></i></a>
+            
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="card">
+            <img src="../public/asset2/images2.jpg" />
+            <h2>Silvy Elga V</h2>
+            <p>Fullstack Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-content">
+      <h1>MY PROJECT</h1>
+  </div>
+  <div  class="container-btn-addnewblog">
+    {{#if isLogin}}
+    <a href="/blog">add new blog</a>
+    {{/if}}
+  </div>
+  <div>
+    <div class="card-container" id="contents">
+      {{#each blogs}}
+      <div class="item-card">
+        <img src="../public/asset2/images2.jpg" alt=""/>
+        <div class="content-card">
+          <a href="/detail/{{this.id}}" target="_blank"><h3>{{this.project}}</h3></a>
+              <div class="duration" >{{this.postat}} </div> {{#if this.author.name}} {{this.author.name}}{{else}} - {{/if}}
+              <p>{{this.description}}</p>
+             
+              <div class="checkbox">
+                
+                {{#if this.node_js}}
+                <span style="font-size: 45;"><img src="../public/asset2/nodejs.png" alt=""></span>
+                {{/if}}
+
+                {{#if this.react_js}}
+                <span style="font-size: 45;"><img src="../public/asset2/atom-symbol.png" alt=""></span>
+                {{/if}}
+
+                {{#if this.next_js}}
+                <span style="font-size: 45;"><img src="../public/asset2/nextjs_icon_132160.png" alt=""></span>
+                {{/if}}
+
+                {{#if this.typescript}}
+                <span style="font-size: 45;"><img src="../public/asset2/typescript.png" alt=""></span>
+                {{/if}}
+                {{!-- <i class="">{{this.nodeJs}}</i>
+                <i class="">{{this.reactJs}}</i> --}}
+                {{!-- <img src="../public/asset2/nextjs_icon_132160.png"/>
+                <img src="../public/asset2/typescript.png"/> --}} 
+              </div>
+              
+             
+              <br>
+              <div class="btn-group">
+                <a href="/edit/{{this.id}}" class="btn-edit">edit</a>
+                  <a href="/home-delete/{{this.id}}" class="btn-delete">delete</a>
+              </div>
+        </div>
+      </div>
+      {{/each}}
+       </div>
+    </div>
+  </body>
+</html>

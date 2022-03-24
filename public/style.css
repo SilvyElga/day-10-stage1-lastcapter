@@ -1,0 +1,526 @@
+/* nav start */
+nav {
+  display: flex;
+  background-color: rgb(226, 225, 225);
+  /* height: 7vh; */
+  padding-right: 90px;
+  padding-left: 90px;
+}
+
+nav div {
+  display: flex;
+}
+
+nav .nav-left {
+  flex: 50%;
+  align-items: center;
+}
+
+.nav-left ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 30px;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-left ul li a:hover {
+  font-weight: bold;
+}
+
+nav .nav-right {
+  flex: 50%;
+  align-items: center;
+}
+
+.nav-right ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 30px;
+}
+
+.nav-right ul li a {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+.nav-right ul li a:hover {
+  font-weight: bold;
+}
+.nav-right {
+  flex: 50%;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav-right .contact-me a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 8px;
+}
+
+/* home start */
+
+.main-container {
+  align-items: center;
+  height: 93vh;
+  display: flex;
+  background-color: rgb(216, 215, 215);
+}
+
+.container-content {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  justify-content: center;
+  box-shadow: 6px 11px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container-content .left-side {
+  flex: 80%;
+  background-color: white;
+  padding: 30px;
+}
+
+.container-content .right-side {
+  flex: 20%;
+  background-color: white;
+}
+
+.left-side p {
+  text-align: justify;
+  font-size: 15;
+  margin-bottom: 40px;
+}
+
+.left-side a {
+  padding: 4px 15px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  margin-right: 15px;
+}
+.left-side .download p {
+  display: inline;
+  font-size: 17px;
+}
+
+.icon a {
+  margin: 10px;
+  font-size: 20px;
+  margin-right: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 500%;
+  padding: 5px 5px;
+}
+.card {
+  text-align: center;
+  margin: 40px 40px;
+
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 6px 11px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  width: 100%;
+}
+.card p {
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+/* form */
+form {
+  margin: auto;
+  width: 400px;
+  align-items: center;
+}
+
+.main {
+  font-weight: bold;
+  height: 93vh;
+  background-color: whitesmoke;
+}
+.main h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+.main .nama label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.nama input {
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.email label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.email input {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.phone label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.phone input {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.password label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.password input {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.subject label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.subject select {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.massage label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.massage textarea {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+  resize: none;
+  height: 70px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 3px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* form input-project  */
+
+.form-container h1 {
+  text-align: center;
+}
+.form-container form {
+  width: 500px;
+  margin: auto;
+  align-items: center;
+}
+.projectname label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.projectname input {
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date .start-date label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.date .start-date input {
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 95%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.date .end-date label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.date .end-date input {
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.description label {
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.description textarea {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+  resize: none;
+  height: 70px;
+  margin-top: 5px;
+}
+
+.technologies p {
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.input-technologies {
+  display: flex;
+  width: 80%;
+  margin-bottom: 15px;
+}
+.input-technologies label {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.input-technologies .tech-left {
+  flex: 40%;
+}
+.input-technologies .tech-right {
+  flex: 40%;
+}
+.image label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.input-image-group {
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+
+  border-radius: 10px;
+}
+.input-image-group p {
+  font-size: 15px;
+}
+
+.input-image-group label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-group button {
+  padding: 3px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.line {
+  border: 1px solid black;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.list-content h1 {
+  text-align: center;
+}
+
+/* form input bootstrap */
+
+.navbar .container {
+  height: 6vh;
+}
+
+.nav-item a:hover {
+  font-weight: bold;
+}
+
+.d-flex button {
+  background-color: black;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 8px;
+}
+
+.d-flex button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* form */
+.container-project {
+  height: 94vh;
+  background-color: whitesmoke;
+}
+.container-project form {
+  width: 450px;
+}
+.container-project input {
+  background-color: rgb(202, 200, 200);
+}
+.container-project textarea {
+  background-color: rgb(202, 200, 200);
+  resize: none;
+}
+
+/* styling card */
+.card-container {
+  display: flex;
+  margin: 50px auto;
+  width: 1200px;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  /* justify-content: space-around; */
+  padding: 10px;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.item-card {
+  width: 350px;
+  border: none;
+  height: 65vh;
+  margin-bottom: 30px;
+  /* flex-direction: row-reverse; */
+  padding: 5px;
+  box-shadow: 6px 11px 5px 0px rgba(0, 0, 0, 0.2);
+  background-color: rgb(235, 233, 233);
+  margin-right: 30px;
+}
+.content-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.item-card img {
+  width: 100%;
+}
+.duration {
+  font-size: 15px;
+  color: grey;
+  text-align: right;
+}
+
+.checkbox i {
+  font-size: 30px;
+}
+
+.checkbox img {
+  width: 25px;
+}
+
+.btn-group a {
+  padding: 3px 60px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.container-btn-addnewblog a {
+  width: 80%;
+  margin: auto;
+  background-color: black;
+  padding: 3px;
+  margin-top: 60px;
+  color: white;
+  align-items: right;
+  margin-right: 80px;
+}
+
+/* detail blog */
+.main-detail h2 {
+  text-align: center;
+}
+.container-detail {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  background-color: white;
+}
+
+.left-detail {
+  flex: 60%;
+}
+.left-detail img {
+  width: 100%;
+}
+.right-detail {
+  flex: 40%;
+  padding: 20px;
+}
+.right-detail .icon-technologies img {
+  width: 10%;
+}
+.content-detail {
+  width: 1200px;
+  margin: auto;
+  padding: 30px;
+  text-align: justify;
+}

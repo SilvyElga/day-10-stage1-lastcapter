@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../public/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="../public/asset2/logo.png" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon me-5"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/blog">Add My Project</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/registrasi">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/login">Login</a>
+              </li>
+            </ul>
+            <button class="btn btn-outline align-items-end" type=""><a href="/form">Contact Me</a></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- endnavbar -->
+    <div class="container-project d-flex align-items-center justify-content-center">
+      <form class="" action="/blog/{{edit.id}}" method="post">
+        <div class="h2 text-center">EDIT PROJECT</div>
+        <div class="mb-3">
+          <label for="input-project" class="form-label">Project Name</label>
+          <input type="text" id="input-project" class="form-control" name="project" value="{{edit.project}}" />
+        </div>
+        <div class="row align-items-center d-flex justify-content-between mb-3">
+          <div class="col-auto">
+            <label for="input-startDate" class="form-label">Start Date</label>
+            <input type="date" id="input-startDate" class="form-control" name="startdate" value="{{edit.startdate}}" />
+          </div>
+          <div class="col-auto">
+            <label for="input-endDate" class="form-label">End Date</label>
+            <input type="date" id="input-endDate" class="form-control" name="enddate" value="{{edit.enddate}}" />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="input-description" class="form-label">Description</label>
+          <textarea class="form-control" id="input-description" rows="3" name="description" placeholder="{{edit.description}}"></textarea>
+        </div>
+        <label for="" value="technologies" name="technologies" class="form-label">Technologies</label>
+        <div class="check-technologies align-items-center d-flex justify-content-start mb-3">
+          <div class="left-site col-auto">
+            <div class="form-check me-5 mb-3">
+              <input class="form-check-input" type="checkbox" value="node_js" id="input-nodeJs" name="node_js" />
+              <label class="form-check-label" for="input-nodeJs"> Node Js </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="react_js" id="input-reactJs" name="react_js" />
+              <label class="form-check-label" for="input-reactJs"> React Js </label>
+            </div>
+          </div>
+          <div class="right-site col-auto">
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="next_js" id="input-nextJs" name="next_js" />
+              <label class="form-check-label" for="input-nextJs"> Next Js </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="typescript" id="input-typeScript" name="typescript" />
+              <label class="form-check-label" for="input-typeScript"> TypeScript </label>
+            </div>
+          </div>
+        </div>
+
+        <label for="input-image" class="form-label">Upload Image</label>
+        <div class="input-group mb-3">
+          <input type="file" class="form-control" id="input-image" name="image" />
+          <label class="input-group-text" for="inputGroupFile02"><img src="../public/asset2/file.png" /></label>
+        </div>
+
+        <button type="submit" class="btn btn-dark align-items-end">Submit</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

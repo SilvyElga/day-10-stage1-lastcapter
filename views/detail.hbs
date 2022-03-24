@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/style.css" />
+    <script src="https://kit.fontawesome.com/cf540236df.js" crossorigin="anonymous"></script>
+    {{! <script src="blog.js"></script> }}
+    <link rel="icon" type="image/x-icon" href="./asset2/erson-outline-icon-png-person-icon-png-white-11562864385wyirbbsupu.png" />
+    <title>Detail</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="../public/asset2/logo.png" alt="logo" />
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/blog">My Project</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="/registrasi">Register</a></li>
+          <li><a href="/login">Login</a></li>
+        </ul>
+        <span class="contact-me"><a href="/form">Contact Me</a></span>
+      </div>
+    </nav>
+
+    <!-- detail blog -->
+    
+      <div class="main-detail" id="detail">
+        <h2>{{this.project}}</h2>
+        <div class="container-detail">
+          <div class="left-detail">
+            <img src="../public/asset2/images2.jpg" alt="" />
+          </div>
+          <div class="right-detail">
+            <h3>Duration</h3>
+            <i class="fa-solid fa-calendar-days"> {{blog.newstartdate}} - {{blog.newenddate}}</i>
+            <br /><br />
+            <i class="fa-regular fa-clock"> {{blog.postat}}</i>
+            <h3>Technologies</h3>
+            <div class="icon-technologies">
+              {{#if this.nodeJs}}
+                <span><img src="../public/asset2/nodejs.png" alt="" /></span>
+              {{/if}}
+
+              {{#if this.reactJs}}
+                <span><img src="../public/asset2/atom-symbol.png" alt="" /></span>
+              {{/if}}
+
+              {{#if this.nextJs}}
+                <span><img src="../public/asset2/nextjs_icon_132160.png" alt="" /></span>
+              {{/if}}
+
+              {{#if this.typeScript}}
+                <span><img src="../public/asset2/typescript.png" alt="" /></span>
+              {{/if}}
+
+            </div>
+          </div>
+        </div>
+        <div class="content-detail">
+          <p>
+            {{blog.description}}
+          </p>
+        </div>
+      </div>
+    
+
+  </body>
+</html>
